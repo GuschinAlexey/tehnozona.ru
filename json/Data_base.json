@@ -1,0 +1,152 @@
+{
+    "FlamaCG": {
+        "price": 9299,
+        "categories": 11,
+        "decription" : "Газовая плита Flama СG 32011 W белый [конфорок - 2 шт, духовка - 30 л, стальные решетки, 50 см x 85 см x 35 см]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/94c9dc66b9d7aaefbe99c1a658234acc/20d10c66d33632c6374bcda7f4606aa8d8c51b30a820cabe2a1a9155dc2da266.jpg.webp"
+    },
+    "FlamaRG2401": {
+        "price": 12799,
+        "categories": 11,
+        "decription" : "Газовая плита Flama RG 2401 W белый [конфорок - 4 шт, духовка - 50 л, стальные решетки, 50 см x 85 см x 58 см]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/c0b231f0e259eeec661d5c1cdef1e4ae/33c26ab6e642fadcebb44b06785f44efbeeecd5522eb6094ee75531928df974b.jpg.webp"
+    },
+    "LISVARG": {
+        "price": 17799,
+        "categories": 11,
+        "decription" : "Газовая плита DARINA F1 3110 W белый [конфорок - 4 шт, духовка - 50 л, электроподжиг, газ-контроль панели, чугунные решетки, 50 см x 85 см x 56 см]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/abd1e9bbf21fc38a6b7fc7c249b67fd9/1a05a56d5da2b077b357d6865403612eb3efa13be6ca3858447f2924a240cc83.jpg.webp" 
+    },
+    "Deluxe6060": {
+        "price": 12899,
+        "categories": 11,
+        "decription" : "Газовая плита DeLuxe 606040.24-001г (кр) ЧР белый [конфорок - 4 шт, духовка - 64 л, электроподжиг, чугунные решетки, 60 см x 85 см x 60 см]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/985ecb4fc648b8487e6d6a1474fc4248/b98c888aa330fae1fb114bcab6d0727833e4ff9790b4aa2c1e9b1755bd2f3a29.jpg.webp"
+    },
+    "HansaFCM": {
+        "price": 27999,
+        "categories": 11,
+        "decription" : "Газовая плита Hansa FCMW582109 белый [конфорок - 4 шт, духовка - 62 л, электроподжиг, газ-контроль панели, гриль, чугунные решетки, 50 см x 85 см x 60 см]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/d0444796e43c2d0bcb3354b921aacb32/ded14ea96fcdc76001ad3e1256b9d94d09391250e2dd8f0f6e24b310a022b641.jpg.webp"
+    },
+    "DEXPRF": {
+        "price": 17999,
+        "categories": 10,
+        "decription" : "Холодильник с морозильником DEXP RF-TD240MA/W серый [240 л, внешнее покрытие-металл, размораживание - ручное, 55 см х 159 см х 55 см]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/2bb637647d19bcc6233e3854f562c357/663115c6bfe15440d965caafc19790f8c207a2f24ca14ab441b377227d25c47e.jpg.webp"
+    },
+    "NordfrostFRT": {
+        "price": 22499,
+        "categories": 10,
+        "decription" : "Холодильник с морозильником Nordfrost FRT 545 002 белый [277 л, внешнее покрытие-металл, пластик, размораживание - ручное, 57 см х 155 см х 63 см]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/bd4958fadbe4324ad3fe5971dd698661/ff239ad589c09cc551c20a9f0d8ef2601b66b6fc575810b78af3cff8d01ccdfe.jpg.webp"
+    },
+    "DONR": {
+        "price": 25599,
+        "categories": 10,
+        "decription" : "Холодильник с морозильником DON R-290 BE бежевый [310 л, внешнее покрытие-пластик, размораживание - ручное, 58 см х 171 см х 61 см]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/a7ebe628ccfbf4adfd9eaa3540b85775/d314ae9c32fcd388c82b5e1803c0fc9326c21025d66218195a05bb05cd97104e.jpg.webp"
+    },
+    "BIRUSA6031": {
+        "price": 27299,
+        "categories": 10,
+        "decription" : "Холодильник с морозильником Бирюса 6031 белый [290 л, внешнее покрытие-металл, размораживание - ручное, 60 см х 192 см х 62.5 см]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/5a148569eb8575f93e496e339f8242b2/ab8891cd0a946d71c533ab8687822cba2c5a5857c00236af2600f07d7cec3890.jpg.webp"
+    },
+    "TCLTRF": {
+        "price": 27999,
+        "categories": 10,
+        "decription" : "Холодильник с морозильником TCL TRF-315WEA+ серый [306 л, внешнее покрытие-металл, размораживание - No Frost, дисплей, 59.5 см х 185 см х 63 см]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/472895ead5502075966671c1ca46d14a/2614c555e56c1e33b7b7467586222be4f5e4262e22987266f13a9b4f82ad5222.jpg.webp"
+    },
+    "NORD_FROST_NRB": {
+        "price": 30499,
+        "categories": 10,
+        "decription" : "Холодильник с морозильником Nordfrost NRB 154 832 красный [331 л, внешнее покрытие-металл, размораживание - ручное, 57 см х 203 см х 63 см]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/409e30ef7aac302896f4ec4a62266dea/54c54e3aa5f2149b449857411df7d5355ee30a40d9fcf8191485db6e45781e56.jpg.webp"
+    },
+    "GOODHELPER": {
+        "price": 550,
+        "categories": 12,
+        "decription" : "Электрочайник GOODHELPER KS-18B02 серебристый [1.8 л, 1500 Вт, скрытый нагревательный элемент, материал корпуса - нержавеющая сталь]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/b180b420c53abc33be4cc5faa66025d0/0c389621acd3671398970999a19bd3e00cb3ca2cc5b35646a233ad3439f0b96f.jpg.webp"
+    },
+    "AcelineSS1800": {
+        "price": 749,
+        "categories": 12,
+        "decription" : "Электрочайник Aceline SS1800 фиолетовый [1.8 л, 1800 Вт, скрытый нагревательный элемент, материал корпуса - нержавеющая сталь]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/f543b9c4ec3948f8bc4ae6839b59256e/4e8985e715437e2f828611fa79acf2034ce56194269f6d0789eacadae7a294c7.jpg.webp"
+    },
+    "HOMESTARHS": {
+        "price": 999,
+        "categories": 12,
+        "decription" : "Электрочайник Homestar HS-1021 черный [1.7 л, 1500 Вт, скрытый нагревательный элемент, фильтр, материал корпуса - нержавеющая сталь]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/38758d4f5b25f434be8f6e5c035f07f7/52aee82b8433d355ee01b18172b87f32dcc676a3e6ee849ce5a4acebf730cc33.jpg.webp"
+    },
+    "BLACKTON": {
+        "price": 999,
+        "categories": 12,
+        "decription" : "Электрочайник Blackton Bt KT1729G черный [1.8 л, 1500 Вт, скрытый нагревательный элемент, материал корпуса - термостойкое стекло]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/6cb48c9b3f2e57b44c0411593acaf3bc/0c35b9b086437bcbb9134e16d8c9b6a7292897814715a70a96afb66ec688de7b.jpg.webp"
+    },
+    "VOLGA": {
+        "price": 1199,
+        "categories": 12,
+        "decription" : "Электрочайник ВОЛЖАНКА ЭЧ-005 оранжевый [1.8 л, 1850 Вт, скрытый нагревательный элемент, фильтр, материал корпуса - нержавеющая сталь]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/bb23d5c48b17bca8ee9cb681f55e46dd/dd19376188e03a1fc4467435dc83271f18939d20e96b283ea5a1a88a357ae7f2.jpg.webp"
+    },
+    "A03Core": {
+        "price": 7699,
+        "categories": 13,
+        "decription" : "6.5 Смартфон Samsung Galaxy A03 Core 32 ГБ зеленый [8x(1.6 ГГц, 1.2 ГГц), 2 Гб, 2 SIM, PLS, 1600x720, камера 8 Мп, 4G, GPS, FM, 5000 мА*ч]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/8b92a56ec46c7002a56bd7916539f7c5/a5e8fe1859ef226cb4aa34d3dccd92fb3a560302a06c0ca38612e51062c242de.jpg.webp"
+    },
+    "A13": {
+        "price": 14999,
+        "categories": 13,
+        "decription" : "6.6 Смартфон Samsung Galaxy A13 128 ГБ голубой [8x(2 ГГц), 4 Гб, 2 SIM, PLS, 2408х1080, камера 50+5+2+2 Мп, NFC, 4G, GPS, 5000 мА*ч]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/04218645d466b42f5e1104bda55bed8a/7da6689a87923a06f68acc68c9b7d308113918f7a656e7ab62ad33f25be76ba5.jpg.webp"
+    },
+    "A32": {
+        "price": 21999,
+        "categories": 13,
+        "decription" : "6.4 Смартфон Samsung Galaxy A32 128 ГБ белый [8x(2 ГГц, 1.8 ГГц), 6 Гб, 2 SIM, Super AMOLED, 2400x1080, камера 64+8+5+5 Мп, NFC, 4G, GPS, 5000 мА*ч]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/e96daf0c75fd2f7fb4c5a05f9ff023fc/423d9497a5623454e47bab61e25a5f899d4ec9bf645532f9d8cacf82371f4237.jpg.webp"
+    },
+    "REDMIA1": {
+        "price": 7999,
+        "categories": 14,
+        "decription" : "6.52 Смартфон Xiaomi Redmi A1+ 32 ГБ голубой [4x(2 ГГц), 2 Гб, 2 SIM, IPS, 1600x720, камера 8+0.3 Мп, 4G, GPS, 5000 мА*ч]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/c57cff7ecbf0400f49e9273eaffd325a/c34ebb92cac7fc285b9d0fd4f6200cc9765cc6c3d2ae6ec60da8a4ef5dd538f9.jpg.webp"
+    },
+    "REDMI10": {
+        "price": 22499,
+        "categories": 14,
+        "decription" : "6.67 Смартфон Xiaomi Redmi Note 10 Pro 128 ГБ золотистый [8x(2.3 ГГц, 1.8 ГГц), 8 Гб, 2 SIM, AMOLED, 2400x1080, камера 108+8+5+2 Мп, NFC, 4G, GPS, 5020 мА*ч]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/fc12a8f079a2b7646f2e70b2c71e4ca8/de6b3e2ec520139031e9d0dbcecb8f85573cf7195c88d3b8da6ce89db4785428.jpg.webp"
+    },
+    "12X": {
+        "price": 54999,
+        "categories": 14,
+        "decription" : "6.28 Смартфон Xiaomi 12X 256 ГБ голубой [8x(3.2 ГГц, 2.4 ГГц, 1.8 ГГц), 8 Гб, 2 SIM, AMOLED, 2400x1080, камера 50+13+5 Мп, NFC, 5G, GPS, 4500 мА*ч]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/c36d1422091b09624d25c4857069cfd4/366607d67bfd7085b75e0761ea770fe0ba1a0452c799b9aa8e44571ef6f9be3c.jpg.webp"
+    },
+    "SE2020": {
+        "price": 32399,
+        "categories": 15,
+        "decription" : "4.7 Смартфон Apple iPhone SE 2020 64 ГБ белый [6x(2.5 ГГц), 3 Гб, 1 SIM, IPS, 1334x750, камера 12 Мп, NFC, 4G, GPS, 1821 мА*ч]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/d23ce50354c40bc61b99925063391dd8/54870b736f648bee41e75d8f14b0498d1ad097242a5e325d304f5002b33293fa.jpg.webp"
+    },
+    "IPHONE11": {
+        "price": 48999,
+        "categories": 15,
+        "decription" : "6.1 Смартфон Apple iPhone 11 128 ГБ белый [6x(2.65 ГГц), 4 Гб, 1 SIM, IPS, 1792x828, камера 12+12 Мп, NFC, 4G, GPS, 3110 мА*ч]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/5366e2ee9ba1e5e4ba24534b3d05fba2/f2a5c571cc2f904e82d8b879432702032b5400bb1b0c6caf3e7006ff2322613e.jpg.webp"
+    },
+    "IPHONE14": {
+        "price": 85499,
+        "categories": 15,
+        "decription" : "6.1 Смартфон Apple iPhone 14 256 ГБ белый [6x(1.8 ГГц, 3.2 ГГц), OLED, 2532х1170, камера 12+12 Мп, NFC, 5G, GPS]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/60165db7e07b9918b1490867be08b0ea/49d467ba6db63ba62870cde877048029636d02115e92f381849869f6232de926.jpg.webp"
+    }
+}
