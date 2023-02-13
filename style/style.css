@@ -39,6 +39,7 @@ a {
   position: sticky;
   height: 300px;
   top: 0px;
+  z-index: 3;
 }
 
 .logo {
@@ -99,6 +100,7 @@ a {
   position: relative;
   background-color: rgb(248, 248, 248);
   min-height: 100vh;
+  z-index: 2;
 }
 
 .header {
@@ -229,7 +231,7 @@ a {
 
 .nomer {
   width: 80px;
-  background-color: #fff;
+  background-color: rgb(88, 88, 88);
   height: 3px;
 }
 
@@ -334,6 +336,10 @@ a {
   text-align: center;
   font-weight: 700;
   margin-top: 15px;
+}
+
+.cart_categories:hover {
+  color:rgb(119, 7, 50);
 }
 
 .categories_span:hover {
@@ -629,4 +635,45 @@ a {
   padding: 9px;
   background-color: white;
   color:rgb(235, 13, 98);
+}
+
+.script_animation_100_to_0 {
+  animation: mymove_zero 0.7s infinite ease;
+}
+
+.script_animation_0_to_100 {
+  animation: mymove_one 0.7s infinite ease;
+}
+
+@keyframes mymove_one {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.round_one {
+  width: 1200px;
+  height: 1200px;
+  border-radius: 50%;
+  shape-inside: circle(50% at center center);
+  background: rgb(235, 13, 98);
+  z-index: -1;
+  position: absolute;
+  top: -600px;
+  right: -600px;
+}
+
+.round_two {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  shape-inside: circle(50% at center center);
+  background: rgb(235, 13, 98);
+  z-index: -1;
+  position: absolute;
+  bottom: 0px;
+  left: -600px;
 }

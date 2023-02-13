@@ -1,124 +1,190 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let categories_counter = 0,
-        HTML_categories,
-        this_categories = '',
-        min_costs = 100000,
-        max_costs = 0,
-        filter = `
-        <div class="filter">
-            <div class="filter_input"> 
-                <div class="input_filter_subscription">ОТ</div>
-                <input type="number" class="min input_filter"> 
-                <div class="input_filter_subscription">ДО</div>
-                <input type="number" class="max input_filter">
-            </div>
-            <div class="filter_button">Отфильтровать</div>
-        </div>
-        <div class="script_one"></div>`;
-
         const categories = [ 
-            [{src : "https://img.freepik.com/free-vector/opened-wider-empty-refrigerator_1284-23309.jpg?size=338&ext=jpg", name: "Холодильники", categories: "10"}, 
-             {src : "https://avatars.mds.yandex.net/i?id=f90a808b628c4237e4fcb46fa7873b8e-4933643-images-thumbs&n=13", name: "Плиты", categories: "11"}, 
-             {src : "https://avatars.mds.yandex.net/i?id=2a0000017a0cb4d92abc30043882d64d0e01-4788476-images-thumbs&n=13", name: "Чайники", categories: "12"}
+            [{src : "../image/categories/1.avif", name: "Холодильники", categories: "10"}, 
+             {src : "../image/categories/2.webp", name: "Плиты", categories: "11"}, 
+             {src : "../image/categories/3.webp", name: "Чайники", categories: "12"}
             ], 
-            [{src : "https://avatars.mds.yandex.net/i?id=e76324d10dbd76f8d162374fcaf9fb8d_sr-5709310-images-thumbs&n=13", name: "Samsung", categories: "13"}, 
-             {src : "https://avatars.mds.yandex.net/i?id=f47886f6c3680b40ef048ae32adedd6d-5434197-images-thumbs&n=13", name: "Xiaomi", categories: "14"}, 
-             {src : "https://avatars.mds.yandex.net/i?id=688fa2df51ac16766ae4fdfc34e02607-5177922-images-thumbs&n=13", name: "IPhone", categories: "15"}
+            [{src : "../image/categories/4.webp", name: "Samsung", categories: "13"}, 
+             {src : "../image/categories/5.webp", name: "Xiaomi", categories: "14"}, 
+             {src : "../image/categories/6.webp", name: "IPhone", categories: "15"}
             ], 
-            [{src : "https://avatars.mds.yandex.net/i?id=e7f15db93f3dfe6056571ae8446240f1-5241954-images-thumbs&n=13", name: "Фотоаппараты", categories: "16"}, 
-             {src : "https://avatars.mds.yandex.net/i?id=0852ffffe841d36219a95838a8aff9f1-5217977-images-thumbs&n=13", name: "Экшн-камеры", categories: "17"}, 
-             {src : "https://avatars.mds.yandex.net/i?id=3032dbef67f5c26b4cd4efe71d6e8ef0_sr-5859245-images-thumbs&n=13", name: "Штативы", categories: "18"}
+            [{src : "../image/categories/7.webp", name: "Фотоаппараты", categories: "16"}, 
+             {src : "../image/categories/8.webp", name: "Экшн-камеры", categories: "17"}, 
+             {src : "../image/categories/9.webp", name: "Штативы", categories: "18"}
            ], 
-           [{src : "https://avatars.mds.yandex.net/i?id=cc621fb254e88a107763f6dd5b61e73c-5159711-images-thumbs&n=13", name: "Ноутбуки", categories: "19"}, 
-            {src : "https://avatars.mds.yandex.net/i?id=11992a0dcaed607f765cf04bdfade59e-4570384-images-thumbs&n=13", name: "Macbook", categories: "20"}, 
-            {src : "https://avatars.mds.yandex.net/i?id=5f79e8a9ab376f5aeca06fbf82d79842-4818076-images-thumbs&n=13", name: "Сумки для ноутбуков", categories: "21"}
+           [{src : "../image/categories/10.webp", name: "Ноутбуки", categories: "19"}, 
+            {src : "../image/categories/11.webp", name: "Macbook", categories: "20"}, 
+            {src : "../image/categories/12.webp", name: "Сумки для ноутбуков", categories: "21"}
            ],
-           [{src : "https://avatars.mds.yandex.net/i?id=05d175cc1a7bbb8c444216f50060ab24-4120605-images-thumbs&n=13", name: "Офисные ПК", categories: "22"}, 
-            {src : "https://avatars.mds.yandex.net/i?id=e1e4100054f26c09de0f2781b45923ed_sr-5284852-images-thumbs&n=13", name: "Игровые ПК", categories: "23"}, 
-            {src : "https://avatars.mds.yandex.net/i?id=7cfa0621682b0d552f240a7c9561b9ea-2952140-images-thumbs&n=13", name: "Моноблоки", categories: "24"}
+           [{src : "../image/categories/13.webp", name: "Офисные ПК", categories: "22"}, 
+            {src : "../image/categories/14.webp", name: "Игровые ПК", categories: "23"}, 
+            {src : "../image/categories/15.webp", name: "Моноблоки", categories: "24"}
            ],
-           [{src : "https://avatars.mds.yandex.net/i?id=2a0000017a0a9929ee5e5d76438b4d98818a-4012071-images-thumbs&n=13", name: "Процессоры", categories: "25"}, 
-            {src : "https://avatars.mds.yandex.net/i?id=1fea524555209da5a7861ffdf564bb6e_sr-7084983-images-thumbs&n=13", name: "Видеокарты", categories: "26"}, 
-            {src : "https://avatars.mds.yandex.net/i?id=a97d152836f9a7acc5eb907492b1e72b-4935648-images-thumbs&n=13", name: "Материнские платы", categories: "27"}
+           [{src : "../image/categories/16.webp", name: "Процессоры", categories: "25"}, 
+            {src : "../image/categories/17.webp", name: "Видеокарты", categories: "26"}, 
+            {src : "../image/categories/18.webp", name: "Материнские платы", categories: "27"}
            ],
-           [{src : "https://avatars.mds.yandex.net/i?id=1917e7aec3abde52bd02669113ef0944-4593651-images-thumbs&n=13", name: "FHD Телевизоры", categories: "28"}, 
-            {src : "https://avatars.mds.yandex.net/i?id=3ea2f08d84671ac957f60c163e0c1b8f_sr-3927965-images-thumbs&n=13", name: "QHD Телевизоры", categories: "29"}, 
-            {src : "https://avatars.mds.yandex.net/i?id=2a00000179febee84a2d8ec57940877211a4-4117687-images-thumbs&n=13", name: "4K Телевизоры", categories: "30"}
+           [{src : "../image/categories/19.webp", name: "FHD Телевизоры", categories: "28"}, 
+            {src : "../image/categories/20.webp", name: "QHD Телевизоры", categories: "29"}, 
+            {src : "../image/categories/21.webp", name: "4K Телевизоры", categories: "30"}
            ],
-           [{src : "https://avatars.mds.yandex.net/i?id=77816993a369163baab00d61782bd86f-4351356-images-thumbs&n=13", name: "PlayStation", categories: "31"}, 
-            {src : "https://avatars.mds.yandex.net/i?id=f2c2f5f11b0f05fd7d998257b15b97e0-5083477-images-thumbs&n=13", name: "XBOX", categories: "32"}, 
-            {src : "https://avatars.mds.yandex.net/i?id=39ac78bc82c0e12b156b7bcb64bfec44-4571987-images-thumbs&n=13", name: "Nintendo", categories: "33"}
+           [{src : "../image/categories/22.webp", name: "PlayStation", categories: "31"}, 
+            {src : "../image/categories/23.webp", name: "XBOX", categories: "32"}, 
+            {src : "../image/categories/24.webp", name: "Nintendo", categories: "33"}
            ]
         ];
-   
-        const hoverMenu = document.querySelectorAll('.element_list_hover_menu');
 
-        hoverMenu.forEach(e => e.addEventListener('click', event => {
-            categories_counter = event.currentTarget.dataset.categories;
-            document.querySelector('.script').innerHTML = `
-            <div class="categories_div"> 
-            </div>`;
-            HTML_categories = document.querySelector('.categories_div');
-            categories[categories_counter].forEach(e =>  {
-                HTML_categories.innerHTML += `
-                <div class="cart_categories" data-cat="${e.categories}"> 
-                    <img src="${e.src}" class="categories_img">
-                    <div class="categories_span">${e.name}</div>
-                </div>
-            </div>`;
-            const cart_categories = document.querySelectorAll('.cart_categories');
-            cart_categories.forEach(e => e.addEventListener('click', event => {
-            this_categories = event.currentTarget.dataset.cat; 
-            document.querySelector('.script').innerHTML = '';
-            fetch('../json/Data_base.json')
-            .then((response) => response.json())
-            .then((data) => {
-                document.querySelector('.script').innerHTML = filter;
-                for (let key in data) {
-                    if (data[key].categories == this_categories) {
-                        document.querySelector('.script_one').innerHTML += `
-                        <div class="element_cart_list">
-                            <img src="${data[key].src}" alt="a" class="element_cart_list_img">
-                            <div class="description_element_cart_list">${data[key].decription}</div>
-                            <div class="price">
-                                <div class="price_price">${data[key].price} &#8381;</div> <br> 
-                                    <div class="add_to_cart">
-                                        <div class="button_to_cart" data="${data[key]}">Добавить в корзину</div>
-                                    </div>
-                                    <div class="love_icon" data="${data[key]}"><img src="./image/love.png" alt="love" class="love_cart"></div>
-                                </div>
-                        </div>`;
-                    } if(data[key].price <= min_costs) {
-                        min_costs = data[key].price;
-                        document.querySelector('.min').placeholder = min_costs;
-                    } if(data[key].price >= max_costs) {
-                        max_costs = data[key].price;
-                        document.querySelector('.max').placeholder = max_costs;
-                    }
-                }
-                document.querySelector('.filter_button').addEventListener('click', () => {
-                min_costs = +document.querySelector('.min').value;
-                max_costs = +document.querySelector('.max').value;
-                document.querySelector('.script_one').innerHTML = '';
-                for (let key in data) {
-                    if (data[key].categories == this_categories && data[key].price < max_costs && data[key].price > min_costs) {
-                        document.querySelector('.script_one').innerHTML += `
-                        <div class="element_cart_list">
-                            <img src="${data[key].src}" alt="a" class="element_cart_list_img">
-                            <div class="description_element_cart_list">${data[key].decription}</div>
-                            <div class="price">
-                                <div class="price_price">${data[key].price} &#8381;</div> <br> 
-                                    <div class="add_to_cart">
-                                        <div class="button_to_cart" data="${data[key]}">Добавить в корзину</div>
-                                    </div>
-                                    <div class="love_icon" data="${data[key]}"><img src="./image/love.png" alt="love" class="love_cart"></div>
-                                </div>
-                        </div>`;
-                    }}});
+
+        const menu = document.querySelectorAll(".element_list_hover_menu"),
+              script = document.querySelector(".script");
+
+        menu.forEach(e => {
+            e.addEventListener('click', event => {
+                renderRasdels(event.currentTarget.dataset.categories);
             });
-        }));
         });
         
-        }));
+let db = '';
+XHR();
+
+    function XHR() {
+        const response = new XMLHttpRequest();
+        response.open("GET", "../json/Data_base.json");
+        response.setRequestHeader("Content-type", "application/json; charset=utf-8");
+        response.send();
+        response.addEventListener('load', () => {
+            if(response.status === 200) {
+                db = JSON.parse(response.response);
+            } else {
+                console.error('Ошибка XHR');
+            }
+        });
+    };
+
     
+    
+
+setTimeout(() => {
+
+    db = Object.values(db);
+
+    function sortMinCat(categories, db) {
+        let arr = [];
+        db.forEach(e => {
+            if(e.categories == categories){
+                arr.push(e.price);
+            }
+        });
+        return Math.min(...arr);
+    }
+   
+    function sortMaxCat(categories, db) {
+        let arr = [];
+        db.forEach(e => {
+            if(e.categories == categories){
+                arr.push(e.price);
+            }
+        });
+        return Math.max(...arr);
+    }
+
+    let holod_min = sortMinCat(11, db),
+        holod_max = sortMaxCat(11, db),
+        plita_min = sortMinCat(12, db),
+        plita_max = sortMaxCat(12, db),
+        tea_min = sortMinCat(13, db),
+        tea_max = sortMaxCat(13, db),
+        samsung_min = sortMinCat(13, db),
+        samsung_max = sortMaxCat(14, db),
+        xiaomi_min = sortMinCat(14, db),
+        xiaomi_max = sortMaxCat(15, db),
+        iphone_min = sortMinCat(15, db),
+        iphone_max = 0,
+        foto_min = sortMinCat(11, db),
+        foto_max = 0,
+        echs_min = sortMinCat(11, db),
+        echs_max = 0,
+        shtativ_min = sortMinCat(11, db),
+        shtativ_max = 0,
+        notebook_min = sortMinCat(11, db),
+        natobook_max = 0,
+        macbook_min = sortMinCat(11, db),
+        macbook_max = 0,
+        bags_min = sortMinCat(11, db),
+        bags_max = 0,
+        officePC_min = sortMinCat(11, db),
+        officePC_max = 0,
+        gamePC_min = sortMinCat(11, db),
+        gamePC_max = 0,
+        manobloks_min = sortMinCat(11, db),
+        monobloks_max = 0,
+        CPU_min = sortMinCat(11, db),
+        CPU_max = 0,
+        videocard_min = sortMinCat(11, db),
+        videocard_max = 0,
+        matherboard_min = sortMinCat(11, db),
+        matherboard_max = 0,
+        FHDTV_min = sortMinCat(11, db),
+        FHDTV_max = 0,
+        QHDTV_min = sortMinCat(11, db),
+        QHDTV_max = 0,
+        UHDTV_min = sortMinCat(11, db),
+        UHDTV_max = 0,
+        PS_min = sortMinCat(11, db),
+        PS_max = 0,
+        XBOX_min = sortMinCat(11, db),
+        XBOX_max = 0,
+        Nintendo_min = sortMinCat(11, db),
+        Nintendo_max = 0; 
+}, 3000);
+
+    
+        
+
+
+       
+
+        function renderRasdels(element) {
+            script.classList.add("script_animation_100_to_0");
+            setTimeout(()=>{
+                script.classList.remove("script_animation_100_to_0");
+                script.classList.add("script_animation_0_to_100");
+                    script.innerHTML = `<div class="categories_div"></div>`;
+                    const categories_div = document.querySelector('.categories_div');
+                    categories[element].forEach(e => {
+                        categories_div.innerHTML += `<div class="cart_categories" data-cat="${e.categories}"> 
+                        <img src="${e.src}" class="categories_img">
+                                <div class="categories_span">${e.name}</div>
+                            </div>
+                        </div>`;
+                        
+                    });
+                    setTimeout(()=>{ 
+                        script.classList.remove("script_animation_0_to_100");
+                    }, 600);      
+            }, 650);
+
+
+
+
+
+            setTimeout(()=>{
+            const cart_cancret = document.querySelectorAll(".cart_categories");
+
+            cart_cancret.forEach(e => {
+                e.addEventListener('click', event => {
+                    fetch_towars(event.currentTarget.dataset.cat);
+                });
+            });
+
+
+            async function fetch_towars(categories) {
+                
+            }
+
+            }, 700);
+
+
+            
+        };
 });
