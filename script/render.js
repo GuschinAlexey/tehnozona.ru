@@ -61,9 +61,56 @@ XHR();
         });
     };
 
+    let holod_min = 0,
+        holod_max = 0,
+        plita_min = 0,
+        plita_max = 0,
+        tea_min = 0,
+        tea_max = 0,
+        samsung_min = 0,
+        samsung_max = 0,
+        xiaomi_min = 0,
+        xiaomi_max = 0,
+        iphone_min = 0,
+        iphone_max = 0,
+        foto_min = 0,
+        foto_max = 0,
+        echs_min = 0,
+        echs_max = 0,
+        shtativ_min = 0,
+        shtativ_max = 0,
+        notebook_min = 0,
+        notebook_max = 0,
+        macbook_min = 0,
+        macbook_max = 0,
+        bags_min = 0,
+        bags_max = 0,
+        officePC_min = 0,
+        officePC_max = 0,
+        gamePC_min = 0,
+        gamePC_max = 0,
+        monobloks_min = 0,
+        monobloks_max = 0,
+        CPU_min = 0,
+        CPU_max = 0,
+        videocard_min = 0,
+        videocard_max = 0,
+        matherboard_min = 0,
+        matherboard_max = 0,
+        FHDTV_min = 0,
+        FHDTV_max = 0,
+        QHDTV_min = 0,
+        QHDTV_max = 0,
+        UHDTV_min = 0,
+        UHDTV_max = 0,
+        PS_min = 0,
+        PS_max = 0,
+        XBOX_min = 0,
+        XBOX_max = 0,
+        Nintendo_min = 0,
+        Nintendo_max = 0; 
     
     
-
 setTimeout(() => {
 
     db = Object.values(db);
@@ -88,16 +135,17 @@ setTimeout(() => {
         return Math.max(...arr);
     }
 
-    let holod_min = sortMinCat(11, db),
-        holod_max = sortMaxCat(11, db),
-        plita_min = sortMinCat(12, db),
-        plita_max = sortMaxCat(12, db),
-        tea_min = sortMinCat(13, db),
-        tea_max = sortMaxCat(13, db),
+
+        holod_min = sortMinCat(10, db),
+        holod_max = sortMaxCat(10, db),
+        plita_min = sortMinCat(11, db),
+        plita_max = sortMaxCat(11, db),
+        tea_min = sortMinCat(12, db),
+        tea_max = sortMaxCat(12, db),
         samsung_min = sortMinCat(13, db),
-        samsung_max = sortMaxCat(14, db),
+        samsung_max = sortMaxCat(13, db),
         xiaomi_min = sortMinCat(14, db),
-        xiaomi_max = sortMaxCat(15, db),
+        xiaomi_max = sortMaxCat(14, db),
         iphone_min = sortMinCat(15, db),
         iphone_max = 0,
         foto_min = sortMinCat(11, db),
@@ -107,7 +155,7 @@ setTimeout(() => {
         shtativ_min = sortMinCat(11, db),
         shtativ_max = 0,
         notebook_min = sortMinCat(11, db),
-        natobook_max = 0,
+        notebook_max = 0,
         macbook_min = sortMinCat(11, db),
         macbook_max = 0,
         bags_min = sortMinCat(11, db),
@@ -116,7 +164,7 @@ setTimeout(() => {
         officePC_max = 0,
         gamePC_min = sortMinCat(11, db),
         gamePC_max = 0,
-        manobloks_min = sortMinCat(11, db),
+        monobloks_min = sortMinCat(11, db),
         monobloks_max = 0,
         CPU_min = sortMinCat(11, db),
         CPU_max = 0,
@@ -136,7 +184,8 @@ setTimeout(() => {
         XBOX_max = 0,
         Nintendo_min = sortMinCat(11, db),
         Nintendo_max = 0; 
-}, 3000);
+    
+}, 500);
 
     
         
@@ -161,30 +210,98 @@ setTimeout(() => {
                     });
                     setTimeout(()=>{ 
                         script.classList.remove("script_animation_0_to_100");
+                        let cart_categories = document.querySelectorAll(".cart_categories");
+                        cart_categories.forEach(e => {
+                            e.addEventListener("click", event => {
+                                let cat = event.currentTarget.dataset.cat
+                                script.classList.add("script_animation_100_to_0");
+                                setTimeout(() => {
+                                    script.classList.remove("script_animation_100_to_0");
+                                    script.classList.add("script_animation_0_to_100");
+                                    setTimeout(() => {
+                                        script.classList.remove("script_animation_0_to_100");
+                                    }, 600);
+                                    script.innerHTML = '';
+                                    switch(cat) {
+                                        case '10' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${holod_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${holod_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '11' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${plita_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${plita_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '12' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${tea_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${tea_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '13' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${samsung_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${samsung_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '14' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${xiaomi_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${xiaomi_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '15' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${iphone_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${iphone_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '16' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${foto_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${foto_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '17' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${echs_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${echs_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '18' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${shtativ_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${shtativ_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '19' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${notebook_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${notebook_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '20' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${macbook_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${macbook_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '21' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${bags_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${bags_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '22' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${officePC_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${officePC_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '23' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${gamePC_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${gamePC_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '24' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${monobloks_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${monobloks_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '25' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${CPU_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${CPU_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '26' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${videocard_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${videocard_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '27' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${matherboard_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${matherboard_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '28' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${FHDTV_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${FHDTV_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '29' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${QHDTV_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${QHDTV_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '30' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${UHDTV_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${UHDTV_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '31' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${PS_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${PS_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '32' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${XBOX_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${XBOX_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                        case '33' :
+                                            script.innerHTML += `<div class="text_align_center"><div class="max_minI"><div class="ImaxI"><label for="minI">Минимальная цена: </label><input type="text" class="minI" placeholder = "${Nintendo_min}"></div><div class="IminI"><label for="maxI">Минимальная цена: </label><input type="text" class="maxI" placeholder = "${Nintendo_max}"></div><div class="max_min_button"><button class="img_subscribe">Отфильтровать</button></div></div><div class="line"><div class="black"></div><div class="white"></div></div>`;
+                                        break;
+                                }}, 600)
+                                
+                                
+                            });
+                        });
                     }, 600);      
             }, 650);
-
-
-
-
-
-            setTimeout(()=>{
-            const cart_cancret = document.querySelectorAll(".cart_categories");
-
-            cart_cancret.forEach(e => {
-                e.addEventListener('click', event => {
-                    fetch_towars(event.currentTarget.dataset.cat);
-                });
-            });
-
-
-            async function fetch_towars(categories) {
-                
-            }
-
-            }, 700);
-
-
-            
+   
         };
 });
