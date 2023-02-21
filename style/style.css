@@ -737,6 +737,7 @@ a {
   border: none;
   border-bottom: 1px grey solid;
   color: black;
+  background-color: #fff;
 }
 
 .minI:focus {

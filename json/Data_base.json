@@ -173,5 +173,194 @@
         "categories": 15,
         "decription" : "6.1 Смартфон Apple iPhone 14 256 ГБ белый [6x(1.8 ГГц, 3.2 ГГц), OLED, 2532х1170, камера 12+12 Мп, NFC, 5G, GPS]",
         "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/60165db7e07b9918b1490867be08b0ea/49d467ba6db63ba62870cde877048029636d02115e92f381849869f6232de926.jpg.webp"
+    },
+    "EOSM200": {
+        "id" : 26,
+        "price": 43999,
+        "categories": 16,
+        "decription" : "Беззеркальная камера Sony Alpha 6400 (ILCE-6400MB) Kit 18-135mm черная [25 Мп, 23.5 x 15.6 мм, CMOS, диафрагма: f/3.5-5.6, 100-32000 ISO, 11 кадр./сек, экран - поворотный, сенсорный]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/b7ab460cffb6a1c84dd67da906b596f4/0e13bd3d5b803b248ea7791408a6b6b2a4efe3c1c6903290f1883fbd43bb8d33.jpg.webp"
+    },
+    "Alpha": {
+        "id" : 27,
+        "price": 109999,
+        "categories": 16,
+        "decription" : "Беззеркальная камера Sony Alpha 6400 (ILCE-6400MB) Kit 18-135mm черная [25 Мп, 23.5 x 15.6 мм, CMOS, диафрагма: f/3.5-5.6, 100-32000 ISO, 11 кадр./сек, экран - поворотный, сенсорный]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/1a6c13b443d327fd2a2a8e9db29946dd/23a49239701264c4b76d0954c98a9e6af2c7d8df25c5ae2d28969e3b7b89700e.jpg.webp"
+    },
+    "XT-4": {
+        "id" : 28,
+        "price": 179999,
+        "categories": 16,
+        "decription" : "Беззеркальная камера Fujifilm X-T4 Kit XF 16-80mm серебристая [26.1 Мп, 23.5 x 15.6 мм, X-Trans CMOS IV, диафрагма: f/4.0, 160-12800 ISO, 30 кадр./сек, экран - сенсорный]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/eae7a4c91115451ef0a2bfc4d9026f51/be3d068a5c3cbc4b46ba4461e343d9f410181f59e49242be150c7ec1700d7e7d.jpg.webp"
+    },
+    "GO-PRO": {
+        "id" : 29,
+        "price": 39999,
+        "categories": 17,
+        "decription" : "Экшн-камера GoPro HERO 11 Black Edition черный [27 Мп, 5312x2988 60 кадр./сек, экран, 1720 мА*ч]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/641a9b3d4bf2efa475bd88ecd415683e/114daee481fcf626a6d0f76b4ec295582aee115e2038e20b76411315107f94f1.jpg.webp"
+    },
+    "GO-PRO_hero_8": {
+        "id" : 30,
+        "price": 28999,
+        "categories": 17,
+        "decription" : "Экшн-камера GoPro HERO8 Black черный [12 Мп, 3840x2160 60 кадр./сек, GPS, экран, 1220 мА*ч]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/ad7e52b200cc20d9d24cc214aaaa24e9/eaeeafdccb41631a8cc0ac9c29dfef8a198de3075c592da9cbdcbf5e984ea1a8.jpg.webp"
+    },
+    "GO-PRO_MAX": {
+        "id" : 31,
+        "price": 49999,
+        "categories": 17,
+        "decription" : "Экшн-камера GoPro MAX 360 черный [16.6 Мп, 5504x2752 30 кадр./сек, угол 360°, GPS, экран, 1600 мА*ч]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/15be7a47f071c078c7bb59ec160b85d1/ff6a75c36da19b36b542eb6dd48bf675c4be7b89785439baecd3ff06401bf6be.jpg.webp"
+    },
+    "HAMA": {
+        "id" : 32,
+        "price": 470,
+        "categories": 18,
+        "decription" : "Штатив Hama Star5 4105 золотистый [напольный, до 0.5 кг, от 36.5 см до 106.5 см, 0.52 кг]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/d76add69507bd8fe3b3991de59b13b21/1c64063b2b60b64077a952b545f1b7635979d0dbe7fe810db190e544984c14a4.jpg.webp"
+    },
+    "DEXP_WT": {
+        "id" : 33,
+        "price": 1299,
+        "categories": 18,
+        "decription" : "Штатив DEXP WT-3530N коричневый [напольный, до 3 кг, от 55 см до 145 см, 1.15 кг]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/6b954c32d6b2abae38a1fe42500d73e4/1bf3a71b3049c6550afd21957d64cb7bea2e9229e4aea75fbb60bc7006fb5717.jpg.webp"
+    },
+    "Manf": {
+        "id" : 34,
+        "price": 7799,
+        "categories": 18,
+        "decription" : "Штатив Manfrotto MKBFRA4RD-BH красный [напольный, до 4 кг, от 34 см до 144 см, 1.4 кг]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/92fb1a06056f46636cbee5989362d265/b885103dc78bd59dd3052187504dffa74c50e944fec7c8022378523bb0c2dcfd.jpg.webp"
+    },
+    "Irbis": {
+        "id" : 35,
+        "price": 15899,
+        "categories": 19,
+        "decription" : "14 Ноутбук Irbis NB283 серый [HD (1366x768), IPS, Intel Celeron 3350, ядра: 2 х 1.1 ГГц, RAM 4 ГБ, eMMC 128 ГБ, Intel HD Graphics 500 , Windows 10 Pro]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/9b533bc525a9a16efd9b575b27badb6e/1022d90f1d6fdf7f799a4c5d69688360c00e122e25cdb0369f2c0753593f8dc9.jpg.webp"
+    },
+    "MSI": {
+        "id" : 36,
+        "price": 33479,
+        "categories": 19,
+        "decription" : "14 Ультрабук MSI Modern 14 C12M-233XRU черный [Full HD (1920x1080), IPS, Intel Core i3-1215U, ядра: 2 + 4 х 1.2 ГГц, RAM 8 ГБ, SSD 256 ГБ, Intel UHD Graphics , без ОС]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/8af671112873db98f9930166046b1200/aa72dd20506ad31750d848784a4f95e669500b4112900b7bbaf33e339c13c7e8.jpg.webp"
+    },
+    "MSI_GAME": {
+        "id" : 37,
+        "price": 370999,
+        "categories": 19,
+        "decription" : "17.3 Ноутбук MSI Titan GT77 HX 13VI-096RU черный [Ultra HD 4K (3840x2160), IPS, Intel Core i9-13980HX, ядра: 8 + 16 х 2.2 ГГц, RAM 32 ГБ, SSD 2000 ГБ, GeForce RTX 4090 для ноутбуков 16 ГБ, Windows 11",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/336d0536b54dad54e3874bde3739d526/90076e0d2a8fb8464eacdb77a9d080bfe01a1177abc5412ff7dd8086f68989e6.png.webp"
+    },
+    "macBOOK_1": {
+        "id" : 38,
+        "price": 65999,
+        "categories": 20,
+        "decription" : "13.3 Ноутбук Apple MacBook Air Как новый золотистый [2560x1600, IPS, Apple M1, ядра: 4 + 4, RAM 8 ГБ, SSD 256 ГБ, Apple M1 7-core , macOS]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/b58bb95c821a78353a8793acd43489de/f395a2a0f2c7c708ef38d3605f55e459245563a15e516a04d5bf8684c01a6a78.jpg.webp"
+    },
+    "macBOOK_2": {
+        "id" : 39,
+        "price": 132999,
+        "categories": 20,
+        "decription" : "13.3 Ноутбук Apple MacBook Air серый [2560x1600, IPS, Apple M1, ядра: 4 + 4, RAM 16 ГБ, SSD 512 ГБ, Apple M1 8-core , macOS]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/3207e9684c6877608e0bc8c3f2f75de6/6faa6f49d51577a2e3d49be8f9f77e2b4e8d75f0a3bee9215a361754319cbd31.jpg.webp"
+    },
+    "macBOOK_3": {
+        "id" : 40,
+        "price": 243999,
+        "categories": 20,
+        "decription" : "16.2 Ноутбук Apple MacBook Pro серый [3456x2234, mini-LED, Apple M1 Pro, ядра: 8 + 2, RAM 16 ГБ, SSD 1024 ГБ, Apple M1 Pro 16-core , macOS]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/e1f1e289a3f5544baeb3f34ce75e2c38/8c054fad47e4462b1b987ed6a3ff633dd2ee2702969760720be47a00e917a419.jpg.webp"
+    },
+    "bag_1": {
+        "id" : 41,
+        "price": 2299,
+        "categories": 21,
+        "decription" : "15.6 Сумка Aceline HT1509NB [нейлон, плечевой ремень, внешнее отделение, черный]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/9c57cd097baf1f6844ca963f97c58ace/2405c991c322ff916875841e59115700b8114120a2d28f4e2cbda2e1a9f13b72.jpg.webp"
+    },
+    "bag_2": {
+        "id" : 43,
+        "price": 2399,
+        "categories": 21,
+        "decription" : "15.6 Сумка Aceline HT1505NP [дакрон, плечевой ремень, внешнее отделение, фиолетовый]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/3e49a68885929558a670e2e8e6a7a71f/1e40f9f79e290b732a3b15adc3f6ff72c3c5cae3d49024039787d1cc57c32a6c.jpg.webp"
+    },
+    "bag_3": {
+        "id" : 44,
+        "price": 2499,
+        "categories": 21,
+        "decription" : "15.6 Сумка Riva 8231 [нейлон, плечевой ремень, внешнее отделение, 580 г, синий]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/f66d006c82375ceba296f7769976395e/97081f283676dddbfc51cd786113e6a32a75cd1961bdc4e7d53f830a13d22d33.jpg.webp"
+    },
+    "office_pc_1": {
+        "id" : 45,
+        "price": 10499,
+        "categories": 22,
+        "decription" : "ПК DEXP Atlas H341 [Intel Celeron N4020, 2x1.1 ГГц, 4 ГБ DDR4, SSD 128 ГБ, без ОС]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/dd16ce3e37cb044234ab3fb96b2bb76c/cbf6fdee338139dd5f1eba626d18d1a84c8dddd644367050207faad3965f8426.jpg.webp"
+    },
+    "office_pc_2": {
+        "id" : 46,
+        "price": 18799,
+        "categories": 22,
+        "decription" : "ПК DEXP Aquilon O275 [AMD Athlon 3000G, 2x3.5 ГГц, 8 ГБ DDR4, SSD 240 ГБ, без ОС]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/36488b221166e14c1f04c74afa70f71d/bb5b75ad711096cea8db199512ea0f266a65605d2f60a52ea543236cd4ffa318.jpg.webp"
+    },
+    "office_pc_3": {
+        "id" : 47,
+        "price": 24999,
+        "categories": 22,
+        "decription" : "Мини ПК Acer Revo Box RN96 [DT.BGDER.005] [Intel Core i3-1115G4, 2x3 ГГц, 4 ГБ DDR4, SSD 256 ГБ, без ОС]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/ac96941b30e4637afcfad4c4668faa8b/5e040ef2d72b6b2006fe325e5b6e6c3ffeef76df05c2b62d6b22c5fb20fde3e4.jpg.webp"
+    },
+    "gaming_pc_1": {
+        "id" : 48,
+        "price": 64999,
+        "categories": 23,
+        "decription" : "ПК ZET GAMING NEO M087 [Intel Core i5-12400F, 6x2.5 ГГц, 16 ГБ DDR4, GeForce RTX 3050, SSD 512 ГБ, без ОС]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/0b573941ad82a8295492a7155f821936/319881cee68d64b23d0a4ddda75cfa12147766f1abcc62aedb50152271f5dbf3.jpg.webp"
+    },
+    "gaming_pc_2": {
+        "id" : 49,
+        "price": 86999,
+        "categories": 23,
+        "decription" : "ПК ZET GAMING WARD H285 [Intel Core i5-12400F, 6x2.5 ГГц, 16 ГБ DDR4, GeForce RTX 3060Ti, SSD 512 ГБ, без ОС]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/069cba3ddd872d2c17a96c0827b96c64/bf13ddecd9a83213c8d76f5e3820a0ebc412b170ff6ce403b37f325046686acf.jpg.webp"
+    },
+    "gaming_pc_3": {
+        "id" : 50,
+        "price": 229999,
+        "categories": 23,
+        "decription" : "ПК ASUS ROG Strix G15CE-71170F0390 [90PF02P1-M003Y0] [Intel Core i7-11700F, 8x2.5 ГГц, 32 ГБ DDR4, GeForce RTX 3080, SSD 512 ГБ, без ОС]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/6104b33222014e5689408c47288472b9/d34aecab0e14bfac5816790cae24aec65fb0b97e735385bc6b741210cb9f0fbe.jpg.webp"
+    },
+    "monoblock_1": {
+        "id" : 51,
+        "price": 25299,
+        "categories": 24,
+        "decription" : "23.8 Моноблок Acer Aspire C24-1651 [DQ.BG8ER.00E] [Intel Core i7-1165G7, 4x2.8 ГГц, IPS, Full HD (1920x1080), 16 ГБ DDR4, SSD 512 ГБ, GeForce MX 450, Windows 11 Home]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/890b92bdb28b862b0a42efca09f4d94a/aae9e0c8fa90689b4a66d9196d3f7f44670f44cea5e0309df120f262f5b9348a.jpg.webp"
+    },
+    "monoblock_2": {
+        "id" : 52,
+        "price": 40299,
+        "categories": 24,
+        "decription" : "21.5 Моноблок Acer Aspire C22-820 [DQ.BDZER.008] [Intel Pentium Silver J5040, 4x2 ГГц, VA, Full HD (1920x1080), 4 ГБ DDR4, SSD 128 ГБ, Linux]",
+        "src": "https://c.dns-shop.ru/thumb/st4/fit/200/200/f50c8ee7c0ccb937ef96777ca42da048/6f89b3768be1a6161e9f528eb9eaae9f63a0708e648ec99f7e60f9ce4ed52efd.jpg.webp"
+    },
+    "monoblock_3": {
+        "id" : 53,
+        "price": 47999,
+        "categories": 24,
+        "decription" : "21.5 Моноблок MSI PRO 22XT 10M-040XRU [9S6-ACD311-243] [Intel Pentium G6400, 2x4 ГГц, IPS, Full HD (1920x1080), 4 ГБ DDR4, SSD 256 ГБ, без ОС]",
+        "src": "https://c.dns-shop.ru/thumb/st1/fit/200/200/e6fdb0c09bd33b71bc0bf407acb18fb2/419450be0ee2506274ef6d6534a6c95e3d513ad547e3fdab5cf1c0bdf9dbdac5.jpg.webp"
     }
 }

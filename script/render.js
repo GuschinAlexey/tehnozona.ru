@@ -33,8 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {src : "../image/categories/24.webp", name: "Nintendo", categories: "33"}
            ]
         ];
+        let love_towars_array = [],
+            cart = [];
 
-
+           
         const menu = document.querySelectorAll(".element_list_hover_menu"),
               script = document.querySelector(".script");
 
@@ -147,19 +149,19 @@ setTimeout(() => {
         xiaomi_min = sortMinCat(14, db),
         xiaomi_max = sortMaxCat(14, db),
         iphone_min = sortMinCat(15, db),
-        iphone_max = 0,
-        foto_min = sortMinCat(11, db),
-        foto_max = 0,
-        echs_min = sortMinCat(11, db),
-        echs_max = 0,
-        shtativ_min = sortMinCat(11, db),
-        shtativ_max = 0,
-        notebook_min = sortMinCat(11, db),
-        notebook_max = 0,
-        macbook_min = sortMinCat(11, db),
-        macbook_max = 0,
-        bags_min = sortMinCat(11, db),
-        bags_max = 0,
+        iphone_max = sortMaxCat(15, db),
+        foto_min = sortMinCat(16, db),
+        foto_max = sortMaxCat(16, db),
+        echs_min = sortMinCat(17, db),
+        echs_max = sortMaxCat(17, db),
+        shtativ_min = sortMinCat(18, db),
+        shtativ_max = sortMaxCat(18, db),
+        notebook_min = sortMinCat(19, db),
+        notebook_max = sortMaxCat(19, db),
+        macbook_min = sortMinCat(20, db),
+        macbook_max = sortMaxCat(20, db),
+        bags_min = sortMinCat(21, db),
+        bags_max = sortMaxCat(21, db),
         officePC_min = sortMinCat(11, db),
         officePC_max = 0,
         gamePC_min = sortMinCat(11, db),
@@ -309,8 +311,8 @@ setTimeout(() => {
                                             </div>
                                             <div class="buy">
                                                 <span class="price">${e.price}&#8381;</span>
-                                                <button class="buy_button img_subscribe" data-src="${e.src}" data-description="${e.decription}" data-price="${e.price}">Добавить в корзину</button>
-                                                <img src="./image/love.png" alt="love" class="love_towars love">
+                                                <div data-name="${e.id}" data-price="${e.price}" data-src="${e.src}" data-description="${e.decription}" data-active="0" class="in_cartttt"><button class="buy_button img_subscribe" data-src="${e.src}" data-description="${e.decription}" data-price="${e.price}">Добавить в корзину</button></div>
+                                                <div data-name="${e.id}" data-active="0" class="love_towars"><img src="./image/love.png" alt="love" class="love"></div>
                                             </div>
                                        </div>`;
                                     }
@@ -323,7 +325,6 @@ setTimeout(() => {
                                             e.classList.remove("animation_margin")
                                         })
                                     }, 1800);
-                                    console.log(cat)
                                 });
                                 setTimeout(() => { 
                                     function filter() {
@@ -341,7 +342,6 @@ setTimeout(() => {
                                             if(e.categories == cat && e.price < maxI && e.price > minI) {
                                                 result.push(e)
                                             }});
-                                            console.log(result[1])
                                             if(result.length > 0) {
                                                 script.innerHTML = ``;
                                                 switch(cat) {
@@ -429,8 +429,8 @@ setTimeout(() => {
                                                         </div>
                                                         <div class="buy">
                                                             <span class="price">${e.price}&#8381;</span>
-                                                            <button class="buy_button img_subscribe" data-src="${e.src}" data-description="${e.decription}" data-price="${e.price}">Добавить в корзину</button>
-                                                            <img src="./image/love.png" alt="love" class="love_towars love">
+                                                            <div data-name="${e.id}" data-price="${e.price}" data-src="${e.src}" data-description="${e.decription}" data-active="0" class="in_cartttt"><button class="buy_button img_subscribe" data-src="${e.src}" data-description="${e.decription}" data-price="${e.price}">Добавить в корзину</button></div>
+                                                            <div data-name="${e.id}" data-active="0" class="love_towars"><img src="./image/love.png" alt="love" class="love"></div>
                                                         </div>
                                                     </div>`;
                                                 });
@@ -450,14 +450,95 @@ setTimeout(() => {
                                         
                                     }
                                     filter();
+                                    setTimeout(() => {
+                                        love_heart()
+                                        inCart()
+                                    }, 100); 
                                 }); }  
                                 filter();
-                            }, 1000)                         
-                            }, 600)           
+                            }, 1000);
+                            setTimeout(() => {
+                                love_heart();
+                                inCart();
+                            }, 100);                   
+                            }, 600);     
+
                             });
                         });
                     }, 600);      
             }, 650);
+            let render_cart = () => {
+                document.querySelector(".cart").addEventListener("click", () => {
+                    script.innerHTML = ``;
+                if(cart.length == 0) {
+                    script.innerHTML = `<span class="towars_no">Здесь пока ничего нет!</span> <br> <img class="smail" src="../image/logo/smail.png"> `;
+                } else {
+                cart.forEach(e => {
+                    script.innerHTML += `
+                                <div class="towars_cart_a_lot_off">
+                                    <div class="towars_img">
+                                        <img src="${e.src}" alt="${e}">
+                                    </div>
+                                    <div class="towars_name">
+                                        <span class="towars_name_span">${e.description}</span>
+                                    </div>
+                                    <div class="buy">
+                                        <span class="price">${e.price}&#8381;</span>
+                                    </div>
+                                </div>`;
+                });
+            }
+                });  
+            };
+            render_cart();       
+function love_heart() {
+    let love_heart = document.querySelectorAll(".love_towars");
+    love_heart.forEach(e => {
+        e.addEventListener('click', event => {
+            if(event.currentTarget.dataset.active == 0) {
+                event.currentTarget.dataset.active = 1;
+                love_towars_array.push(event.currentTarget.dataset.name);
+                event.currentTarget.innerHTML = `<img src="./image/love_red.png" alt="love" class="love">`;
+                console.log(event.currentTarget.dataset.name);
+                console.log(love_towars_array);
+            } else {
+                event.currentTarget.dataset.active = 0;
+                love_towars_array.splice(love_towars_array.indexOf(event.currentTarget.dataset.name), 1);
+                event.currentTarget.innerHTML = `<img src="./image/love.png" alt="love" class="love">`;
+                console.log(love_towars_array);
+            }
+        });
+    });
+}
+function inCart() {
+    let buy_button = document.querySelectorAll(".in_cartttt");
+    buy_button.forEach(e => {
+        e.addEventListener('click', event => {
+            if(event.currentTarget.dataset.active == 0) {
+                event.currentTarget.dataset.active = 1;
+                cart.push({
+                    src: event.currentTarget.dataset.src,
+                    description: event.currentTarget.dataset.description,
+                    id : event.currentTarget.dataset.id,
+                    price : event.currentTarget.dataset.price
+                });
+                event.currentTarget.innerHTML = `<span>Убрать из корзины</span>`;
+                console.log(cart);
+            } else {
+                event.currentTarget.dataset.active = 0;
+                cart.splice(cart.indexOf({
+                    src: event.currentTarget.dataset.src,
+                    decription: event.currentTarget.dataset.decription,
+                    id : event.currentTarget.dataset.id,
+                    price : event.currentTarget.dataset.price}), 1);
+                event.currentTarget.innerHTML = `<button class="buy_button img_subscribe" data-src="${e.src}" data-description="${e.decription}" data-price="${e.price}">Добавить в корзину</button>`;
+                console.log(cart);
+            }
+        });
+    });
+}
+
+
    
-        };
+        } 
 });
