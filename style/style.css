@@ -200,7 +200,6 @@ a {
 
 .slider > img {
   width: 100%;
-  cursor: pointer;
 }
 
 .left_strelka {
@@ -281,6 +280,20 @@ a {
   gap: 10px;
   margin-left: 400px;
   /*width: 440px;*/
+}
+
+input[type="text"] { width: 98%; margin-bottom: 10px; height: 25px; color: grey;}
+input[type="button"] {height: 45px; width: 213px; background: rgb(235, 13, 98);}
+
+.pay_form {
+  width: 700px;
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+  -webkit-box-shadow: 0px 0px 7px 9px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 7px 9px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 7px 9px rgba(34, 60, 80, 0.2);
+  background-color: #fff;
+  margin-top: 70px;
 }
 
 .cart {

@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
 let db = '';
+
 XHR();
 
     function XHR() {
@@ -434,6 +435,7 @@ setTimeout(() => {
                                                         </div>
                                                     </div>`;
                                                 });
+                                                
                                                     buy_button = document.querySelectorAll('.buy_button');
                                                     let towars_cart_a_lot_off = document.querySelectorAll('.towars_cart_a_lot_off');
                                                     towars_cart_a_lot_off.forEach(e => {
@@ -487,6 +489,17 @@ setTimeout(() => {
                                     </div>
                                 </div>`;
                 });
+                let resultPay = 0;
+                cart.forEach(e => resultPay += +e.price);
+                script.innerHTML += `
+                <form method='POST' action='https://demo.paykeeper.ru/create/' class="pay_form">
+                    <input type='text' name='sum' value='ФИО'/> <br />
+                    <input type='text' name='orderid' value='Адрес'/> <br />
+                    <input type='text' name='service_name' value='Номер карты'/> <br />
+                    <input type='text' name='service_name' value='CVV'/> <br />
+                    <input type='text' name='service_name' value='Срок действия карты'/> <br />
+                    <input type='button' value='Оплатить ${resultPay}&#8381;' />
+                </form>`;
             }
                 });  
             };
